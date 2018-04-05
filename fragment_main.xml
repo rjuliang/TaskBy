@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/taskNametextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.FloatingActionButton
+    android:id="@+id/plusButton"
+    android:layout_width="248dp"
+    android:layout_height="219dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="100dp"
+    android:clickable="true"
+    android:focusable="auto"
+    app:backgroundTint="?attr/colorBackgroundFloating"
+    app:srcCompat="@android:drawable/ic_input_add" />
+
+    <LinearLayout
+        android:id="@+id/horizontal1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addTaskTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:text="@string/add_task"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+</LinearLayout>
